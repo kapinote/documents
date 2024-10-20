@@ -5,7 +5,7 @@ layout: home
 hero:
   name: KapiNote
   text: KapiNote Document
-  tagline: My great project tagline
+  tagline: en
   actions:
     - theme: brand
       text: Markdown Examples

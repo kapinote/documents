@@ -4,12 +4,12 @@ layout: home
 
 hero:
   name: KapiNote
-  text: KapiNote Document
-  tagline: My great project tagline
+  text: Document
+  tagline: zhTW
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 開始使用
+      link: /zh/overview
 
 features:
   - title: Feature A
