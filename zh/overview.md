@@ -1,12 +1,14 @@
-# 簡介
+---
+title: KapiNote 是什麼？
+---
 
-## KapiNote 是什麼？
+# KapiNote 是什麼？
 
 KapiNote 是一款 AI 智能筆記助手，結合 AI 技術，提供多種筆記功能，讓您的筆記過程更加智慧、高效。
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-立即開始使用？跳到[快速開始](./getting-started)。
+立即開始使用？跳到 [快速開始](./getting-started)。
 
 </div>
 
