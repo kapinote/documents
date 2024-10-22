@@ -16,4 +16,4 @@ title: 快速開始
 ![alt text](/assets/images/samples/getting-started-01.webp)
 
 *快速教學預覽*
-![alt text](/assets/images/samples/getting-started-01.webp)
+![alt text](/assets/images/samples/getting-started-02-zhTW.webp)
