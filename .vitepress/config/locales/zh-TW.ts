@@ -1,10 +1,15 @@
 import { defineConfig } from 'vitepress'
 
 // current year
+let copyrightYear = '2024'
 const year = new Date().getFullYear()
+if (copyrightYear === year.toString()) {
+  copyrightYear = year.toString()
+} else {
+  copyrightYear = `${copyrightYear}-${year}`
+}
 
 // https://vitepress.dev/reference/site-config
-
 export default defineConfig({
   lang: 'zh-TW',
   title: 'KapiNote',
@@ -29,15 +34,18 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '基本功能', link: '/zh/basic' },
-          { text: '總結功能', link: '/zh/summarize' },
           { text: '翻譯功能', link: '/zh/translate' },
-          { text: '網頁截圖', link: '/zh/web-screenshot' },
+          { text: '網頁截圖', link: '/zh/screenshot' },
         ]
+      },
+      {
+        text: '版本紀錄',
+        link: '/zh/versions'
       }
     ],
 
     footer: {
-      copyright: `© KapiNote. ${year} All rights reserved.`,
+      copyright: `© KapiNote. ${copyrightYear} All rights reserved.`,
     },
 
     // socialLinks: [

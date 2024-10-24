@@ -4,18 +4,18 @@ layout: home
 
 hero:
   name: KapiNote
-  text: KapiNote Document
-  tagline: My great project tagline
+  text: AI Note-taking Tool
+  tagline: Make your writing process more intelligent and efficient
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /en/overview
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Professional Note-taking Techniques
+    details: Provide professional note-taking techniques
+  - title: Web Screenshot
+    details: Use AI technology to accurately describe the image content or extract text from the image, and integrate it into your notes.
+  - title: Translate
+    details: Translate your notes into other languages, making it easier to read and understand.
 ---
