@@ -27,7 +27,7 @@ jobs:
   # build
   build:
     runs-on: ubuntu-latest
-    name: Deploy
+    name: Build
     steps:
       - name: Cache packages
         uses: actions/cache@v4
