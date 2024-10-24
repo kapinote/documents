@@ -44,7 +44,7 @@ export default defineConfig({
   transformPageData(pageData) {
     pageData.frontmatter.head ??= []
 
-    const title = 'KapiNote Shortener'
+    const title = 'KapiNote Documentation'
     const content = pageData.frontmatter.layout === 'home' ? title : `${pageData.title} | ${title}`
     pageData.frontmatter.head.push(['meta', { name: 'og:title', content } ])
     pageData.frontmatter.head.push(['meta', { name: 'twitter:title', content } ])
