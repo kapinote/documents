@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import pkg from '../../../package.json'
 
 // current year
 let copyrightYear = '2024'
@@ -20,7 +21,12 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' }
+      { text: 'Chrome Web Store', link: 'https://chromewebstore.google.com/detail/kapi-note/mipkdcafgifjojpkonphdmcepnbgddif' },
+      { text: 'Getting Started', link: '/getting-started' },
+      {
+        text: `v${pkg['chrome-app-version']}`,
+        items: [{ text: 'Changelog', link: '/versions' }]
+      }
     ],
 
     sidebar: [

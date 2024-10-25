@@ -6,6 +6,9 @@ hero:
   name: KapiNote
   text: AI Note-taking Tool
   tagline: Make your writing process more intelligent and efficient
+  image:
+    src: /logo-large.png
+    alt: KapiNote
   actions:
     - theme: brand
       text: Get Started

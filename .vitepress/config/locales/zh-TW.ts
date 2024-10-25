@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import pkg from '../../../package.json'
 
 // current year
 let copyrightYear = '2024'
@@ -20,7 +21,12 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首頁', link: '/zh/' }
+      { text: 'Chrome 線上應用程式商店', link: 'https://chromewebstore.google.com/detail/kapi-note/mipkdcafgifjojpkonphdmcepnbgddif' },
+      { text: '快速開始', link: '/zh/getting-started' },
+      {
+        text: `v${pkg['chrome-app-version']}`,
+        items: [{ text: '更新日誌', link: '/zh/versions' }]
+      }
     ],
 
     sidebar: [
@@ -54,5 +60,24 @@ export default defineConfig({
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
+
+    docFooter: {
+      prev: '上一頁', next: '下一頁'
+    },
+    outline: { label: '頁面導覽' },
+    lastUpdated: {
+      text: '最後更新於',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+
+    langMenuLabel: '多語言',
+    returnToTopLabel: '回到頂部',
+    sidebarMenuLabel: '選單',
+    darkModeSwitchLabel: '外觀',
+    lightModeSwitchTitle: '切換到淺色模式',
+    darkModeSwitchTitle: '切換到深色模式'
   }
 })

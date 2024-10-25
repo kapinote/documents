@@ -6,6 +6,9 @@ hero:
   name: KapiNote
   text: AI 筆記工具
   tagline: 讓您的寫作過程更加智慧、快速
+  image:
+    src: /logo-large.png
+    alt: KapiNote
   actions:
     - theme: brand
       text: 開始使用
