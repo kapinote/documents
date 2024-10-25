@@ -14,6 +14,9 @@ export default defineConfig({
   lang: 'zh-TW',
   title: 'KapiNote',
   description: 'KapiNote 說明文件',
+  head: [
+    ['meta', { property: 'og:locale', content: 'zh-TW' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

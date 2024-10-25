@@ -14,10 +14,13 @@ export default defineConfig({
   lang: 'en',
   title: 'KapiNote',
   description: 'KapiNote Documentation',
+  head: [
+    ['meta', { property: 'og:locale', content: 'en' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/en/' }
+      { text: 'Home', link: '/' }
     ],
 
     sidebar: [
@@ -25,22 +28,22 @@ export default defineConfig({
         text: 'Introduction',
         collapsed: false,
         items: [
-          { text: 'What is KapiNote?', link: '/en/overview' },
-          { text: 'Getting Started', link: '/en/getting-started' },
+          { text: 'What is KapiNote?', link: '/overview' },
+          { text: 'Getting Started', link: '/getting-started' },
         ]
       },
       {
         text: 'Tutorial',
         collapsed: false,
         items: [
-          { text: 'Basic', link: '/en/basic' },
-          { text: 'Translate', link: '/en/translate' },
-          { text: 'Web Screenshot', link: '/en/screenshot' },
+          { text: 'Basic', link: '/basic' },
+          { text: 'Translate', link: '/translate' },
+          { text: 'Web Screenshot', link: '/screenshot' },
         ]
       },
       {
         text: 'Versions',
-        link: '/en/versions'
+        link: '/versions'
       }
     ],
 

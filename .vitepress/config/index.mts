@@ -1,27 +1,42 @@
 import { defineConfig } from 'vitepress'
 import { en, zhTW } from './locales'
 
+const title = 'KapiNote Documentation'
+
 export default defineConfig({
+  rewrites: {
+    'en/:rest*': ':rest*'
+  },
+
+  lastUpdated: true,
+  cleanUrls: true,
+  metaChunk: true,
+
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,shrink-to-fit=no' }],
     ['meta', { name: 'rating', content: 'general' }],
-    ['link', { href: 'logo.png', rel: 'icon', type: 'image/x-icon' }],
-    ['link', { href: 'logo.png', rel: 'apple-touch-icon-precomposed' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/logo.png' }],
+    ['link', { rel: 'apple-touch-icon-precomposed', href: '/logo.png' }],
+    ['meta', { name: 'theme-color', content: '#7F00FF' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'googlebot', content: 'index,follow' }],
     ['meta', { name: "apple-mobile-web-app-capable", content: "yes" }],
     ['meta', { name: "apple-touch-fullscreen", content: "yes" }],
-    ['meta', { name: "apple-mobile-web-app-title", content: "KapiNote Documentation" }],
+    ['meta', { name: "apple-mobile-web-app-title", content: title }],
 
     // Open Graph / Facebook
-    ['meta', { property: 'og:url', content: 'https://docs.kapinote.co/' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    // ['meta', { property: 'og:image', content: 'https://opengraph.neya.io/neya?v=TkVP7MfZrusKXdpaBUT-FvQ3hkj2SEf9MLgiAXRfgauU1VMmn3r6HLOjeFHDdAAf' }],
+    ['meta', { property: 'og:locale', content: 'en' }],
+    ['meta', { property: 'og:title', content: title }],
+    ['meta', { property: 'og:site_name', content: title }],
+    ['meta', { property: 'og:image', content: '/og.png' }],
+    ['meta', { property: 'og:url', content: 'https://docs.kapinote.co/' }],
 
     // Twitter
     ['meta', { property: 'twitter:card', content: 'summary' }],
     ['meta', { property: 'twitter:url', content: 'https://docs.kapinote.co/' }],
-    // ['meta', { property: 'twitter:image', content: 'https://opengraph.neya.io/neya?v=TkVP7MfZrusKXdpaBUT-FvQ3hkj2SEf9MLgiAXRfgauU1VMmn3r6HLOjeFHDdAAf' }],
+    ['meta', { property: 'twitter:image', content: '/og.png' }],
 
     // alternate
     ['link', { rel: "alternate", href: "https://docs.kapinote.co/", hreflang: "x-default" }],
@@ -50,8 +65,19 @@ export default defineConfig({
     pageData.frontmatter.head.push(['meta', { name: 'twitter:title', content } ])
   },
 
+  sitemap: {
+    hostname: 'https://docs.kapinote.co',
+    transformItems(items) {
+      return items.filter((item) => !item.url.includes('migration'))
+    }
+  },
+
   locales: {
     root: { label: 'English', lang: 'en', link: '/en/', ...en },
     zh: { label: '中文', lang: 'zh', link: '/zh/', ...zhTW },
+  },
+
+  themeConfig: {
+    logo: { src: '/logo.svg', width: 24, height: 24 },
   }
 })
