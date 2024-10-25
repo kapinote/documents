@@ -8,7 +8,7 @@ KapiNote is an AI note-taking tool that combines AI technology to provide a vari
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Get started with KapiNote.
+Start using KapiNote? Jump to [Getting Started](./getting-started).
 
 </div>
 

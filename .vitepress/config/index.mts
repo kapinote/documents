@@ -5,8 +5,8 @@ export default defineConfig({
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,shrink-to-fit=no' }],
     ['meta', { name: 'rating', content: 'general' }],
-    ['link', { href: '/assets/images/logo/logo@2x.png', rel: 'icon', type: 'image/x-icon' }],
-    ['link', { href: '/assets/images/logo/logo@2x.png', rel: 'apple-touch-icon-precomposed' }],
+    ['link', { href: 'logo.png', rel: 'icon', type: 'image/x-icon' }],
+    ['link', { href: 'logo.png', rel: 'apple-touch-icon-precomposed' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'googlebot', content: 'index,follow' }],
     ['meta', { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -32,12 +32,12 @@ export default defineConfig({
     ['link', { rel: "alternate", href: "https://docs.kapinote.co/zh/", hreflang: "zh-CN" }],
 
     // google analytics
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-9BCQLRZ5XC' }],
+    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-W6E72ZZ5XN' }],
     ['script', {}, `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-9BCQLRZ5XC');
+      gtag('config', 'G-W6E72ZZ5XN');
     `]
   ],
 
