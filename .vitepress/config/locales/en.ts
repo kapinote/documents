@@ -29,29 +29,28 @@ export default defineConfig({
       }
     ],
 
-    sidebar: [
-      {
-        text: 'Introduction',
-        collapsed: false,
-        items: [
-          { text: 'What is KapiNote?', link: '/overview' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ]
-      },
-      {
-        text: 'Tutorial',
-        collapsed: false,
-        items: [
-          { text: 'Basic', link: '/basic' },
-          { text: 'Translate', link: '/translate' },
-          { text: 'Web Screenshot', link: '/screenshot' },
-        ]
-      },
-      {
-        text: 'Versions',
-        link: '/versions'
-      }
-    ],
+    sidebar: [{
+      text: 'Introduction',
+      collapsed: false,
+      items: [
+        { text: 'What is KapiNote?', link: '/overview' },
+        { text: 'Getting Started', link: '/getting-started' },
+      ]
+    }, {
+      text: 'Tutorial',
+      collapsed: false,
+      items: [
+        { text: 'Basic', link: '/basic' },
+        { text: 'Translate', link: '/translate' },
+        { text: 'Web Screenshot', link: '/screenshot' },
+      ]
+    }, {
+      text: 'Versions',
+      link: '/versions'
+    }, {
+      text: 'Privacy Policy',
+      link: '/privacy_policy'
+    }],
 
     footer: {
       copyright: `© KapiNote. ${copyrightYear} All rights reserved.`,
