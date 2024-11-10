@@ -8,7 +8,7 @@ title: 版本紀錄
 
 ## v0.0.3 (2024-11-03) {#v0.0.3}
 
-<!-- 等不及 Chrome Web Store 更新? 你可以至 <a href="/downloads/v0.0.3.crx" target="_blank">連結</a> 下載。 -->
+等不及 Chrome Web Store 更新? 你可以至 <a href="/releases/v0.0.3.crx" target="_blank">連結</a> 下載。
 
 ### ✅ Fixes
   - 🤖 修正 Edge 瀏覽器無法登入問題
@@ -16,7 +16,7 @@ title: 版本紀錄
 
 ## v0.0.2 (2024-10-28) {#v0.0.2}
 
-等不及 Chrome Web Store 更新? 你可以至 <a href="/downloads/v0.0.2.crx" target="_blank">連結</a> 下載。
+等不及 Chrome Web Store 更新? 你可以至 <a href="/releases/v0.0.2.crx" target="_blank">連結</a> 下載。
 
 ### ⭐️ Features
   - ✨ 筆記功能變的更好用了!!

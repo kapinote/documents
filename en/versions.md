@@ -8,7 +8,7 @@ If you encounter any issues, please report them on the issue page. Thank you for
 
 ## v0.0.3 (2024-11-03) {#v0.0.3}
 
-<!-- Wait for Chrome Web Store to update? You can download it from <a href="/downloads/v0.0.3.crx" target="_blank">here</a>. -->
+Wait for Chrome Web Store to update? You can download it from <a href="/releases/v0.0.3.crx" target="_blank">here</a>.
 
 ### ✅ Fixes
   - 🤖 Fixed the Edge browser login issue
@@ -16,7 +16,7 @@ If you encounter any issues, please report them on the issue page. Thank you for
 
 ## v0.0.2 (2024-10-28) {#v0.0.2}
 
-Wait for Chrome Web Store to update? You can download it from <a href="/downloads/v0.0.2.crx" target="_blank">here</a>.
+Wait for Chrome Web Store to update? You can download it from <a href="/releases/v0.0.2.crx" target="_blank">here</a>.
 
 ### ⭐️ Features
   - ✨ Note function is better!
